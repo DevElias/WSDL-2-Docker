@@ -83,6 +83,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 docker -v
 
+![image](https://user-images.githubusercontent.com/14336962/114489245-2f689380-9be9-11eb-9000-4bc034f05d8c.png)
+
+
 
 
 
