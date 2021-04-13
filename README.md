@@ -48,7 +48,8 @@
       
        wsl -l -v
        
-       ![Uploading image.png…]()
+       ![image](https://user-images.githubusercontent.com/14336962/114487864-b1a38880-9be6-11eb-89ed-2d9446fd7374.png)
+
 
      
 
