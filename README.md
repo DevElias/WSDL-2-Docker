@@ -92,27 +92,27 @@ Instalando Docker Compose
 
 2. Dando pervilégios ao Docker:
 
-sudo usermod -aG docker $USER
+   sudo usermod -aG docker $USER
 
 3. Reiniciar a instância Docker
 
-sudo service docker start && docker-compose up -d
+   sudo service docker start && docker-compose up -d
 
 4. ativar os containers Docker:
 
-docker start $(docker ps -aq)
+   docker start $(docker ps -aq)
 
 5. parar todos serviços docker
 
-docker stop $(docker ps -aq)
+   docker stop $(docker ps -aq)
 
 6. Instalando composer no Docker 
 
-docker-compose exec app composer install
+   docker-compose exec app composer install
 
 7.remover todos containers
 
-docker rm $(docker ps -aq)
+  docker rm $(docker ps -aq)
 
 
 
