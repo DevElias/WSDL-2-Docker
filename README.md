@@ -51,7 +51,41 @@
        ![image](https://user-images.githubusercontent.com/14336962/114487864-b1a38880-9be6-11eb-89ed-2d9446fd7374.png)
 
 
-     
+ # Agora estamos prontos para instalar o Docker no nosso WSL2 Ubuntu
+ 
+ 1. Vamos abrir nosso terminal Linux e executar os seguintes comandos:
+
+[Abaixo os comandos são para atualização de alguns pacotes necessários para a instalação do Docker]
+
+sudo apt-get update
+
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic test"
+
+sudo apt update
+
+2. Instalando os pacotes Docker:
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+3. Verificando a versão do Docker:
+
+docker -v
+
+
+
+
 
      
 
