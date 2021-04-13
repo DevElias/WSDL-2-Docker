@@ -86,6 +86,34 @@ docker -v
 ![image](https://user-images.githubusercontent.com/14336962/114489245-2f689380-9be9-11eb-9000-4bc034f05d8c.png)
 
 
+Instalando Docker Compose
+
+1. sudo apt-get -y install docker-compose
+
+2. Dando pervilégios ao Docker:
+
+sudo usermod -aG docker $USER
+
+3. Reiniciar a instância Docker
+
+sudo service docker start && docker-compose up -d
+
+4. ativar os containers Docker:
+
+docker start $(docker ps -aq)
+
+5. parar todos serviços docker
+
+docker stop $(docker ps -aq)
+
+6. Instalando composer no Docker 
+
+docker-compose exec app composer install
+
+7.remover todos containers
+
+docker rm $(docker ps -aq)
+
 
 
 
