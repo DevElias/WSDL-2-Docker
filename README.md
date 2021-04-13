@@ -31,6 +31,15 @@
   8. Agora você precisa definir a versão 2 do WSL na sua distribuição linux:
 
      wsl --set-version Ubuntu-20.04 2
+     
+  9. Caso você tenha tido algum problema ao setar a versão 2 do WSL, vc pode verificar a razão da falha utilizando o seguinte comando no power sheall:
+
+     Systeminfo.exe
+     
+     ![image](https://user-images.githubusercontent.com/14336962/114486362-1d382680-9be4-11eb-8bc8-ec3f591b308b.png)
+     
+     Nesse exemplo acima, tive problemas com a configuração de virtualização do windows, foi necessário habilitar a virtualização no firewall do windows;
+
  
  
 
