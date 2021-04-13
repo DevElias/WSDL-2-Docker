@@ -38,7 +38,21 @@
      
      ![image](https://user-images.githubusercontent.com/14336962/114486362-1d382680-9be4-11eb-8bc8-ec3f591b308b.png)
      
-     Nesse exemplo acima, tive problemas com a configuração de virtualização do windows, foi necessário habilitar a virtualização no firewall do windows;
+     9.1 - Nesse exemplo acima, tive problemas com a configuração de virtualização do windows, foi necessário habilitar a virtualização no firewall do windows;
+     9.2 - Também tive que habilitar a virtualização direto na BIOS da minha placa mãe, essa configuração varia de modelo para modelo.
+     9.3 - Para ter certeza estamos na v2 da WSL é necessário aparecer Conversão Concluída após rodar o comando -> wsl --set-version Ubuntu-20.04 2
+
+     ![image](https://user-images.githubusercontent.com/14336962/114487715-743efb00-9be6-11eb-8a04-1ca722967dcf.png)
+     
+     9.4 - Por último para realmente verificar em que versão esta sua distribução linux, você pode executar o comando:
+      
+       wsl -l -v
+       
+       ![Uploading image.png…]()
+
+     
+
+     
 
  
  
