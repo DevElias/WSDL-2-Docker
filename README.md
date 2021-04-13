@@ -110,9 +110,9 @@ Instalando Docker Compose
 
    docker-compose exec app composer install
 
-7.remover todos containers
+7. remover todos containers
 
-  docker rm $(docker ps -aq)
+   docker rm $(docker ps -aq)
 
 
 
