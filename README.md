@@ -49,7 +49,55 @@
        wsl -l -v
        
        ![image](https://user-images.githubusercontent.com/14336962/114487864-b1a38880-9be6-11eb-89ed-2d9446fd7374.png)
+       
+    9.5 - Caso necessite reiniciar a instância em algum momento, execute o comando abaixo:
 
+       wsl --shutdown
+       
+ # Guia de configuração para acessar o servidor remotamente com interface (xrdp)
+ 
+ Passo 1 - Instalando xRDP
+ 
+ sudo apt-get update
+ sudo apt-get install xrdp
+ 
+ Passo 2 - Instalando XFCE4
+ 
+ sudo apt-get install xfce4
+ 
+ Passo 3 - Instale o terminal XFCE4 e o pacote de icones
+ 
+ sudo apt-get install xfce4-terminal
+ 
+ sudo apt-get install gnome-icon-theme-full tango-icon-theme
+ 
+ Passo 4 - Configura o xRDP
+ 
+ echo xfce4-session >~/.xsession
+ 
+ Passo 5 - Editar o arquivo
+ 
+ nano /etc/xrdp/startwm.sh
+ 
+ Adicione isso na última linha do arquivo: startxfce4
+ 
+ ![image](https://user-images.githubusercontent.com/14336962/114904344-24328500-9dee-11eb-9463-c7ce9275768b.png)
+
+  Passo 6 - Reiniciar o xRDP
+  
+  sudo service xrdp restart
+  
+  Passo 7 - Para verificar o IP de acesso:
+  
+  hostname -I
+  
+  Passo 8 - Abrir a conexão remota do windows ou mac e adicione o ip de conexão:
+  
+  ![image](https://user-images.githubusercontent.com/14336962/114904974-ceaaa800-9dee-11eb-8442-92a83738ac30.png)
+
+  Passo 9 - Entre como session Xorg, seu usuario do linux e senha:
+  
+  ![image](https://user-images.githubusercontent.com/14336962/114905190-0d406280-9def-11eb-9afc-334687b1529a.png)
 
  # Agora estamos prontos para instalar o Docker no nosso WSL2 Ubuntu
  
