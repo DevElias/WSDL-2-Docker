@@ -143,8 +143,14 @@ Instalando Docker Compose
 2. Dando pervilégios ao Docker:
 
    sudo usermod -aG docker $USER
+   
+   Ver Grupos que seu usuário faz parte:
 
-3. Reiniciar a instância Docker
+   groups $USER
+   
+   - Reiniciar a instância
+
+3. Iniciar a instância Docker
 
    sudo service docker start && docker-compose up -d
 
@@ -163,6 +169,22 @@ Instalando Docker Compose
 7. remover todos containers
 
    docker rm $(docker ps -aq)
+   
+8. Informações sobre seus containers
+ 
+   docker info 
+
+9. Listando processos do Docker:
+
+   docker ps
+   
+10. Listando Imagens do Docker:
+
+    docker images
+    
+11. pesquisando images do docker
+
+     docker search apache ou qualquer outra imagem mysql - php - etc   
 
 
 
