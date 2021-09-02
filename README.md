@@ -1,4 +1,4 @@
-# Guia de Instalação WSL 2 + Docker + Laravel
+# Guia de Instalação WSL 2 + XRDP
 
  1. Etapa 1 – Habilitar o Subsistema do Windows para Linux
  
