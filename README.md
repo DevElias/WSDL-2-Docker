@@ -99,4 +99,6 @@
   
   ![image](https://user-images.githubusercontent.com/14336962/114905190-0d406280-9def-11eb-9afc-334687b1529a.png)
   
+  * Comando para abrir google chrome vinculado a pastas: google-chrome --user-data-dir="tmp"
+  
   Tutorial de apoio: https://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/
